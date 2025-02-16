@@ -62,6 +62,9 @@ let
     ml4w = {
       imports = [ ./ml4w.nix ];
     };
+    ndots = {
+      imports = [ ./profiles/ndots ];
+    };
   };
 
 in {

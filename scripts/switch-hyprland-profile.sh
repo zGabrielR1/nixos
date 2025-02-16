@@ -5,7 +5,7 @@
 HYPRLAND_CONFIG="/home/zrrg-3/Downloads/merge/ml4w/nixos-dots/home/zrrg/wm/hyprland/default.nix"
 
 # Available profiles
-PROFILES=("jakoolit" "ml4w" "personal")
+PROFILES=("jakoolit" "ml4w" "personal" "ndots")
 
 # Function to show usage
 usage() {
