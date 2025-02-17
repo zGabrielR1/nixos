@@ -16,7 +16,7 @@
   programs.home-manager.enable = true;
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+
 
   # Basic packages that should be installed
   home.packages = with pkgs; [
