@@ -1,17 +1,15 @@
+
 {
   description = "ZRRG's NixOS Configuration";
 
   inputs = {
-    # Core dependencies
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    
-    # Home manager
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Hyprland
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland-dots = {
       url = "github:JaKooLit/Hyprland-Dots/main";
@@ -44,6 +42,9 @@
                 "https://hyprland.cachix.org"
                 "https://nix-community.cachix.org"
                 "https://nixos.org/channels/nixos-unstable"
+                "https://numtide.cachix.org"
+                "https://divnix.cachix.org"
+                "https://nixpkgs-wayland.cachix.org"
               ];
               trusted-public-keys = [
                 "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
@@ -51,6 +52,9 @@
                 "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiQMmr7/mho7G4ZPo="
                 "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
                 "nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+                "numtide.cachix.org-1:53/BlWLgjTTnOEGTBrOsbOWmA5BoTyJkj8eIG3mA0n8="
+                "divnix.cachix.org-1:Ek/jazMWxT9v7i1I95Z6lfxyvMZgF3eLnMWajJ2KKZ0="
+                "nixpkgs-wayland.cachix.org-1:XJ1a29PyPzUz8W6sEhnOTrF3OSa/6MExNdeyDOvGrmM="
               ];
               auto-optimise-store = true;
               trusted-users = [ "root" "@wheel" ];
